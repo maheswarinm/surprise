@@ -71,7 +71,6 @@
   <div id="badgePopup" class="popup-badge" aria-hidden="true">
     <div class="crown">👑</div>
     <div class="title">Deep Sundariiiiiii</div>
-    <div class="sub">You have unlocked the Princess Badge!</div>
   </div>
 
 <script>
@@ -132,12 +131,7 @@ function checkWin(){
 
 // --- On win: show message, confetti, flower shower and popup badge, plus Mitsuri dialogue ---
 function onWin(){
-  messageEl.innerHTML = `
-    <h2 style="color:var(--primary);margin:10px 0">${WIN_MESSAGE}</h2>
-    <p style="margin:8px 0;font-weight:600"> Unlocked 👑🌸</p>
-    <img src="mitsuri.png" alt="Mitsuri" style="width:180px;margin-top:10px;border-radius:16px"/>
-    <p style="margin-top:10px;color:var(--muted);font-style:italic">"Oh! Yeah! Yes, I'm feeling a lot better!"</p>
-  `;
+  window.location.href = "https://maheswarinm.github.io/surprise/nextpage.html";
   startMusic();
   runConfetti();
   showFlowerShower();
